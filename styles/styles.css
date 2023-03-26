@@ -1,43 +1,55 @@
-body {
-  background-color: #334155;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: white;
-  padding-left: 12px;
-  padding-top: 4px;
+.container {
+    background-image: url(./resources/WechatIMG20.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 50px;
 }
 
-.mouse {
-  font-size: 24px;
+.main-title {
+    text-align: center;
+    color: #f3d381;
+    font-size: 80px;
+    font-style: italic;
 }
 
-.counter {
-  color: #fbbf24;
-}
-
-h2 {
-  color: #f9a8d4;
-}
-
-/* CSS */
-button {
-  appearance: none;
-  background-color: #b45309;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 20px;
-  padding: 6px 16px;
-  position: relative;
+.sub-title {
   text-align: center;
+    color: #f3d381;
+    font-size: 60px;
+    font-style: italic;
 }
 
-button:hover {
-  background-color: #92400e;
+
+.main-wrapper {
+    display: flex;
+    padding: 5vw;
+    justify-content: space-between;
+}
+
+.left-container {
+    background-color: rgba(111, 111, 111, 0.8);
+    border-radius: 10px;
+    height: 400px;
+    width: 40%;
+    padding: 40px 80px;
+}
+
+.left-container .preference{ 
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.left-container #start,.left-container #end{ 
+  width: 148px;
+}
+
+.right-container {
+    background-color: rgba(111, 111, 111, 0.9);
+    border-radius: 10px;
+    height: 200px;
+    width: 30%;
+    padding: 20px;
 }
