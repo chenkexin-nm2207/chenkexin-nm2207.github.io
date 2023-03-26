@@ -1,45 +1,51 @@
 .container {
-    background-image: url(../resources/WechatIMG6753.jpeg);
+    background-image: url(../resources/Hogwarts_night.jpeg);
+    background-size: cover 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding: 50px;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 20px;
 }
 
 .main-title {
     text-align: center;
-    color: #2d2822;
+    color: white;
     font-size: 60px;
+    font-weight: bolder;
     font-style: italic;
+    font-family: fantasy, papyrus;
 }
 
 .sub-title {
   text-align: center;
     color: #f3d381;
     font-size: 30px;
+    font-weight: bolder;
     font-style: italic;
+    font-family: fantasy, copperplate;
 }
 
 
 .main-wrapper {
     display: flex;
-    padding: 5vw;
+    padding: 70px 70px;
     justify-content: space-between;
 }
 
 .left-container {
-    background-color: rgba(111, 111, 111, 0.8);
+    background-color: rgba(111, 111, 111, 0.5);
     border-radius: 10px;
-    height: 400px;
-    width: 40%;
-    padding: 40px 80px;
+    min-height: 400px;
+    width: 70%;
+    padding: 30px 40px;
 }
 
 .left-container .preference{ 
-    width: 500px;
     display: flex;
     justify-content: space-between;
     margin: 10px 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .left-container #start,.left-container #end{ 
@@ -47,9 +53,21 @@
 }
 
 .right-container {
-    background-color: rgba(111, 111, 111, 0.9);
+    background-color: rgb(103,89,76, 0.7);
     border-radius: 10px;
     height: 200px;
-    width: 30%;
+    width: 15%;
     padding: 20px;
+}
+
+.right-container .preference{ 
+    color: rgb(222,212,184);
+}
+
+.right-container .right-container-title{ 
+    color: rgb(222,212,184);
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
