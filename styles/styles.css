@@ -40,7 +40,28 @@
     padding: 30px 40px;
 }
 
-.left-container .preference{ 
+.left-container .typing-text{ 
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    color: yellow;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(500, end) forwards;
+    font-size:large;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+.left-container .text{ 
     display: flex;
     justify-content: space-between;
     margin: 10px 20px;
@@ -71,3 +92,5 @@
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+  

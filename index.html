@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chen Kexin's NM2207 GitHub Portfolio</title>
-    <script src="scripts/counter.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
@@ -16,16 +17,14 @@
         <h2 class="sub-title">Welcome to the wizarding world!</h2>
         <div class="main-wrapper">
             <div class="left-container">
-                <div class="preference">
+                <div class="typing-text">
                     <p>Congradulations! You have been selected to be a wizard! Are you ready?</p><br>
-                    <button onclick="start()">I'm ready!</button><br>
-                    <p>Please tell me your name!</p>
+                    <button onclick="startPrompt()">I'm ready!</button><br>
                 </div>
-                <div class="preference">
-                    <label for="start">Birthday:</label>
-                    <input type="date" id="start" name="trip-start" value="2001-12-30" min="1960-01-01"
-                        max="2022-12-31">
-                </div>
+                <div id="welcome" class="text"> </div>
+                <div id="birthday_button" class="text"></div>
+                <div id="house" class="text"> </div>
+
             </div>
 
             
