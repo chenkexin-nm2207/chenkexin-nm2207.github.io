@@ -81,10 +81,6 @@
     padding: 20px;
 }
 
-.right-container .preference{ 
-    color: rgb(222,212,184);
-}
-
 .right-container .right-container-title{ 
     color: rgb(222,212,184);
     font-weight: bold;
@@ -93,4 +89,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-  
+.right-container #Announcement {
+  color: rgb(222,212,184); 
+  font-size: 18px;
+}
