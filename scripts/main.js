@@ -11,7 +11,7 @@ function startPrompt() {
   }
   
   const subtitleElement = document.getElementById("welcome");
-  const subtitleText = "My dear young wizard, welcome to Hogwarts! You must be very talent and curious! Here you will be taught brand-new magic knowledge and experience unforeseen exciting events. You will be tested, but afterwards you could win the glory for your house if you can successfully pass them. Good luck and be brave. Now, sit tight and the Sorting Hat will assign you a house.";
+  const subtitleText = "My dear young wizard, welcome to Hogwarts! You must be very talented and curious! Here you will be taught brand-new magic knowledge and experience unforeseen exciting events. You will be tested, but afterwards you could win the glory for your house if you can successfully pass them. Good luck and be brave. Now, sit tight and the Sorting Hat will assign you a house.";
   let index = 0;
   const intervalId = setInterval(() => {
     if (index <= subtitleText.length) {
