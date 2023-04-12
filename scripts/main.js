@@ -531,7 +531,7 @@ function week4_intro(){
 
 function week4_intro2(){
   document.getElementById("week4_intro2").innerHTML = `
-    <p>Rules: <br>You only know the probable HP of that dragon is around 5-7, but you will get help from the ghosts three times.<br>Harry can kill 1 HP<br>Snape can kill 2 HP<br>Dumbledore can kill 3 HP<br>It depends on your courage and your good luck! You will get their help ramdomly and you initial power is 0.<br><p>
+    <p>Rules: <br>You only know the probable HP of that dragon is around 5-7, but you will get help from the ghosts three times.<br>Harry can kill 1 HP<br>Snape can kill 2 HP<br>Dumbledore can kill 3 HP<br>It depends on your courage and your good luck! You will get their help randomly and you initial power is 0.<br><p>
     <input type="button" value="I understand the rules. Here we go!" onclick="dragon()">
   `;
 }
