@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <audio src="resources/Hedwig.mp3" id="myAudio" autoplay loop controls></audio>
     <div class="container">
         <h1 class="main-title">Hogwarts Adventure</h1>
         <h2 class="sub-title">Welcome to the wizarding world!</h2>
@@ -22,27 +23,33 @@
                     <button onclick="startPrompt()">I'm ready!</button><br>
                 </div>
                 <div id="welcome" class="text"> </div>
-                <div id="birthday_button" class="text"></div>
+                <div id="HatImage" class="Image"> </div>
+                <div id="birthday_button" class="Button"></div>
                 <div id="house" class="text"> </div>
 
-                <div id="week1_button" class="text"></div>
+                <div id="week1_button" class="Button"></div>
+                <div id="PotionImage" class="Image"> </div>
                 <div id="week1" class="text"> </div>
                 <div id="week1_result" class="text"> </div>
 
-                <div id="week2_button" class="text"> </div>
+                <div id="week2_button" class="Button"> </div>
+                <div id="MindImage" class="Image"> </div>
                 <div id="week2_intro" class="text"></div>
                 <div id="week2_intro2" class="text"> </div>
                 <div id="psycoclass" class="text"> </div>
                 
-                <div id="week3_button" class="text"></div>
+                <div id="week3_button" class="Button"></div>
+                <div id="SpellImage" class="Image"> </div>
                 <div id="week3" class="text"> </div>
                 <div id="week3_result" class="text"> </div>
 
-                <div id="week4_button" class="text"></div>
+                <div id="week4_button" class="Button"></div>
+                <div id="DragonImage" class="Image"> </div>
                 <div id="week4_intro" class="text"></div>
                 <div id="week4_intro2" class="text"> </div>
                 <div id="dragon" class="text"> </div>
 
+                <div id="EndingImage" class="Image"> </div>
                 <div class="typing-text" id="ending"> </div>
             </div>
 
@@ -51,6 +58,9 @@
                 <div class="right-container-title">
                     <label>Announcement</label>
                     <br><br>
+                </div>
+                <div class="Image">
+                    <img id="houseImage" src="resources/Hogwarts.png" alt="Nice to meet you" width="150" height="180">
                 </div>
                 <div id="Announcement">
                     <p>Your house: </p>

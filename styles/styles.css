@@ -76,7 +76,7 @@
 .right-container {
     background-color: rgb(103,89,76, 0.7);
     border-radius: 10px;
-    height: 200px;
+    height: 400px;
     width: 15%;
     padding: 20px;
 }
@@ -92,4 +92,31 @@
 .right-container #Announcement {
   color: rgb(222,212,184); 
   font-size: 18px;
+}
+
+.right-container .Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container .Image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container .Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+audio {
+  position: absolute;
+  top: 3;
+  left: 3;
 }

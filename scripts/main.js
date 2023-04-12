@@ -20,13 +20,16 @@ function startPrompt() {
       } else {
         clearInterval(intervalId);
       }
-  }, 100);
+  }, 50);
   
-  setTimeout(assignHouse, 36500);
+  setTimeout(assignHouse, 18500);
 }
 
 
 function assignHouse(){
+  document.getElementById("HatImage").innerHTML = `
+      <img src="resources/Hat.png" alt="Hat" height="150">
+  `;
   const buttonContainer = document.getElementById("birthday_button");
   const newButton = document.createElement("button");
   newButton.innerText = "Put on Sorting Hat!";
@@ -53,12 +56,17 @@ function house(){
     } else {
       clearInterval(intervalid);
     }
-  }, 100);
-  setTimeout(updateAnnouncement, 20000);
-  setTimeout(week1, 45000);
+  }, 50);
+  setTimeout(updateAnnouncement, 5000);
+  setTimeout(updateHouse, 5000);
+  setTimeout(week1, 22500);
 }
 
 // update
+function updateHouse() {
+  const houseImageElement = document.getElementById("houseImage");
+  houseImageElement.src = "resources/" + House + ".png";
+}
 function updateAnnouncement() {
   var announcementElement = document.getElementById("Announcement");
   announcementElement.innerHTML = "Your house: " + House + "<br><br>Magic power: " + magic_power + "<br><br>House credit: " + house_credit;
@@ -79,6 +87,9 @@ function week1(){
 }
 
 function potion1(){
+  document.getElementById("PotionImage").innerHTML = `
+    <img src="resources/Potion.png" alt="Potion" height="150">
+  `;
   document.getElementById("week1").innerHTML = `
     <h3>Q1: Please choose how long is the effect of one cup of Polyjuice Potion?</h3>
     <form>
@@ -227,10 +238,10 @@ function potion(){
       } else {
         clearInterval(intervalId);
       }
-  }, 100);
+  }, 50);
 
   updateAnnouncement();
-  setTimeout(week2, 8000);
+  setTimeout(week2, 4000);
 }
 
 // Week2
@@ -246,6 +257,9 @@ function week2(){
 }
 
 function week2_intro(){
+  document.getElementById("MindImage").innerHTML = `
+    <img src="resources/Mind.png" alt="Mind" height="150">
+  `;
   const mindElement = document.getElementById("week2_intro");
   const mindText = "This class teaches wizards how to know the thoughts of Death Eaters and win. In this lesson, we will practice simple mind reading skills through a guessing game.";
   let index = 0;
@@ -256,8 +270,8 @@ function week2_intro(){
       } else {
         clearInterval(intervalId);
       }
-  }, 100);
-  setTimeout(week2_intro2, 16000);
+  }, 50);
+  setTimeout(week2_intro2, 9000);
 }
 
 function week2_intro2(){
@@ -302,10 +316,10 @@ function psyco(){
       } else {
         clearInterval(intervalId);
       }
-  }, 100);
+  }, 50);
 
   updateAnnouncement();
-  setTimeout(week3, 8000);
+  setTimeout(week3, 4000);
 }
 
 // Week3
@@ -324,6 +338,9 @@ function week3(){
 }
 
 function spell1(){
+  document.getElementById("SpellImage").innerHTML = `
+    <img src="resources/Spell.png" alt="Spell" height="150">
+  `;
   document.getElementById("week3").innerHTML = `
   <h3>Q1: Please choose which spell is the forbidden spell!</h3>
   <form>
@@ -476,10 +493,10 @@ function spell(){
       } else {
         clearInterval(intervalId);
       }
-  }, 100);
+  }, 50);
 
   updateAnnouncement();
-  setTimeout(week4, 7000);
+  setTimeout(week4, 3500);
 }
 
 // Week4
@@ -495,6 +512,9 @@ function week4(){
 }
 
 function week4_intro(){
+  document.getElementById("DragonImage").innerHTML = `
+    <img src="resources/Dragon.png" alt="Dragon" height="150">
+  `;
   const gamblerElement = document.getElementById("week4_intro");
   const gamblerText = "Woow! Watch out! There is a fire dragon! Calm Down! We need to fight it! ";
   let index = 0;
@@ -505,8 +525,8 @@ function week4_intro(){
       } else {
         clearInterval(intervalId);
       }
-  }, 100);
-  setTimeout(week4_intro2, 8000);
+  }, 50);
+  setTimeout(week4_intro2, 4000);
 }
 
 function week4_intro2(){
@@ -569,14 +589,17 @@ function dragon(){
         } else {
           clearInterval(intervalId);
         }
-    }, 100);
+    }, 50);
 
     updateAnnouncement();
-    setTimeout(ending, 15000);
+    setTimeout(ending, 7500);
 }
 
 // Result
 function ending(){
+  document.getElementById("EndingImage").innerHTML = `
+    <img src="resources/Ending.png" alt="Ending" height="150">
+  `;
   if(house_credit === 0){
     document.getElementById("ending").innerHTML = `<p>Unfortunately, your have no house credits. But, do not give up! <br>One moment lose does not mean everthing! Trust yourself and try again!</p>`;
   }
